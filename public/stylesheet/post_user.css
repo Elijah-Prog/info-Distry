@@ -1,0 +1,48 @@
+.content{
+    background-color: rgb(250, 217, 155);
+    width: fit-content;
+    text-align:center;
+    border-radius: 15px;
+    margin: 0 auto;
+}
+
+h2{
+
+    text-align: center;
+    font: Verdana;
+}
+
+.text-upload{
+
+    width: 400px;
+    height: 100px;
+    min-width: 400px;
+    max-width: 700px;
+    min-height: 100px;
+    max-height: 300px;
+}
+
+.submit-post{
+
+    background-color: rgb(142, 185, 185);
+    width: 100px;
+    height: 30px;
+    border-radius: 15px 15px;
+    border: none;
+}
+
+.choose-file ::-webkit-file-upload-button::before{
+
+    content: 'Select some Media';
+    display: inline;
+}
+
+.choose-file{
+
+    background-color: #8eb9b9;
+    border-radius: 0px 15px 15px 0px;
+}
+
+
+
+

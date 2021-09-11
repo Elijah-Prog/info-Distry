@@ -1,0 +1,50 @@
+<!Doctype html>
+
+<html>
+    <head>
+        <title>MyInfo</title>
+        <meta charset= "utf-8">
+        <link rel="stylesheet" media="all" href="stylesheet/navigation.css" />
+        <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
+    </head>
+    <body class="header-body">
+
+<header class="front-header">
+</id>
+<a class="logo" href="index.php">info:Distry</a>
+        <div class="search">
+            <div class="icon"></div>
+            <div class="input">
+                <input type="text" placeholder="Search" id="mysearch">
+            </div>
+            <span class="clear" onclick="document.getElementById('mysearch').value = ''"></span>
+        </div>
+        <ul class="nav-options">
+            <li><a href="index.php">Home</a></li>
+            <li><a href="notifications.php">Notifications</a></li>
+            <li><a class="post" href="#">Post</a></li>
+            <li><a href="about.php">About</a></li>
+            <li><a id="user-sign" href="#">Account</a><li>
+        </ul>
+</header>
+
+<section class="banner"></section>
+<script type="text/javascript">
+
+    window.addEventListener("scroll", function(){
+
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0 )
+    })
+
+
+    const icon = document.querySelector('.icon');
+    const search = document.querySelector('.search');
+
+    icon.onclick = function(){
+        search.classList.toggle('active')
+    }
+</script>
+    </body>
+</html>
+

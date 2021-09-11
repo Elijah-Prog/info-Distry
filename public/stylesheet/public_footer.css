@@ -1,0 +1,42 @@
+.public-footer{
+
+    position: relative;
+    min-height: 30vh;
+    text-align: center;
+    padding: 50px;
+    background-color: rgb(253, 245, 245);
+}
+.copyright{
+
+    padding: 20px;
+}
+.query-email{
+
+    width: 450px;
+    height: 40px;
+
+}
+.queries{
+
+    height: 150px;
+    width: 450px;
+    min-width: 400px;
+    max-width: 700px;
+    min-height: 100px;
+    max-height: 300px;
+}
+
+.query-submit{
+
+    border-radius: 20px 20px;
+    background-color: rgb(224, 199, 151);
+    color: black;
+    height: 45px;  
+    width: 100px;
+    border: none;
+}
+
+.logo{
+
+    text-decoration: none;
+}
