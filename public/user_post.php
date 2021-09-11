@@ -15,9 +15,13 @@
                     <img class="user-post-icon" src="/myproject/public/images/user-icon.png" alt="" width=50px height=50px>
                     <section id="user-information">
                         <text class="username">Mthobeli Makaluza</text>
+                        <small>2 hours Ago</small>
                     </section>
                     </section>
-                <text>Hey there. Welcome to info:Distry website</text>
+
+                    <section class="post-content">
+                        <text>Hey there. Welcome to info:Distry website</text>
+                    </section>
             </div>
             <br>
             <div id="user-post-info">
