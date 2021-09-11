@@ -28,7 +28,7 @@
                 <br>
                 <br>
 
-                <img class="img-test" src="/myproject/public/images/lucifer.png">
+                <img class="img-test" src="/info-Distry/public/images/lucifer.png">
                 <br>
                 <br>
                 What was your favourite Journal for today? Let us know.

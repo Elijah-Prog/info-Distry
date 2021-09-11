@@ -2,7 +2,7 @@
 
 <html>
     <head>
-        <title>MyInfo</title>
+        <title>Info:Distry</title>
         <meta charset= "utf-8">
         <link rel="stylesheet" media="all" href="stylesheet/navigation.css" />
         <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
