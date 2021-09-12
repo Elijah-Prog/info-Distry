@@ -30,6 +30,8 @@
         <?php include 'generalInfo.php'?>
         
     <?php include (SHARED_PATH .'/public_footer.php')?>
+
+
     </body>
 </html>
 

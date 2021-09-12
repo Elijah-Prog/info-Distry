@@ -1,4 +1,4 @@
- <!doctype html>
+ <!DOCTYPE html>
 
     
 <html>   
@@ -11,7 +11,7 @@
             <div class="modal-content" draggable="true">
 
                 <div class="close">+</div>
-                <img class="profile-picture" src="/myproject/public/images/user-icon.png" alt="" width=100px height=100px>
+                <img class="profile-picture" src="/info-Distry/public/images/user-icon.png" alt="" width=100px height=100px>
 
                 <form action="">
                     <input class="login-input" type="email" placeholder="Email Address">
@@ -20,7 +20,7 @@
                     <br>
                     <button class="submit" type="submit">Sign in</button>
 
-                    <p>Don't have an account yet ? <a href="#">Sign Up</a></p>
+                    <p>Don't have an account yet ? <a class="sign-up" href="#">Sign Up</a></p>
                 </form>
             </div>
         </div>

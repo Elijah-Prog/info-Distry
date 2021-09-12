@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Bondoni Moda:200,300,400,500,600,700,800,900&display=swap');
 *
 {
     margin: 0;
@@ -40,10 +40,11 @@ header.sticky{
 header .logo
 {
     position:relative;
+    font-family: Bondoni Moda;
     font-weight: 700;
     color: #fff;
     text-decoration: none;
-    font-size: 1em;
+    font-size: 1.2em;
     text-transform: uppercase;
     letter-spacing: 2px;
     transition: 0.6s;

@@ -12,7 +12,6 @@
     margin-right: auto;
     border-radius: 5px;
     max-width: 50rem;
-    padding-bottom: 5rem;
     height: 500px;
 
     
@@ -76,3 +75,34 @@
     height: 25px;
     background: black;
 }
+
+.post-footer{
+
+    height: 60px;
+    text-align: left;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    background: rgb(255, 255, 255);
+    padding-bottom: 10px;
+}
+
+iframe{
+
+    border: none;
+}
+
+.like-button{
+    padding-right: 10px;
+}
+
+.dislike-button{
+    padding-right: 10px;
+}
+
+.comment-txt{
+
+    padding-right: 10px;
+}
+
+

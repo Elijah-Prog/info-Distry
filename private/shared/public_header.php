@@ -1,4 +1,4 @@
-<!Doctype html>
+<!DOCTYPE html>
 
 <html>
     <head>
@@ -15,7 +15,7 @@
         <div class="search">
             <div class="icon"></div>
             <div class="input">
-                <input type="text" placeholder="Search" id="mysearch">
+                <input type="text" placeholder="Search" id="mysearch"></input>
             </div>
             <span class="clear" onclick="document.getElementById('mysearch').value = ''"></span>
         </div>

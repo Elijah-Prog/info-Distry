@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html>
     <head>
@@ -24,6 +24,7 @@
                 <br>
                 <br>
                 <button class="submit-post" type="button">Send Post</button>
+                <br>
                 <br>
             </section>
             </div>

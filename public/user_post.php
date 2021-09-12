@@ -1,10 +1,10 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html>
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" media="all" href="stylesheet/user_post_info.css" />
-
+        <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
     </head>
 
     <body>
@@ -25,12 +25,20 @@
                     </section>
                     <br>
                     <section class="post-content">
-                        <text>Hey there. Welcome to info:Distry website</text>
+                        <span class="user-post-description">
+                            <p style="text-size:10px;">Hey there. Welcome to info:Distry website. This is my first ever projects by myself and it is with great honor that I get to speak with you..</p>
+                        </span>
                         <br>
                         <br>
                         <section class="user-file">
-                            <iframe width=420px height=200px src="https://www.youtube.com/embed/tgbNymZ7vqY">></iframe>
+                            <iframe width=420px height=250px src="https://www.youtube.com/embed/tgbNymZ7vqY">></iframe>
                         </section>
+                    </section>
+                    <section class="post-footer">
+                        <a class="like-button" href="#"><i style="width:20px; height: 20px; color:black;" class="far fa-thumbs-up"></i></a>
+                        <a class="dislike-button" href="#"><i style="width:20px; height: 20px; color:black;" class="far fa-thumbs-down"></i></a>
+                        <small class="comment-txt">Comment</small><br>
+                        <small class="report-txt">Report</small>
                     </section>
         </div>
         <br>
