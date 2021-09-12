@@ -27,7 +27,6 @@
         <br>
         <?php include 'user_post.php'?>
         <br>
-        <?php include 'generalInfo.php'?>
         
     <?php include (SHARED_PATH .'/public_footer.php')?>
 
