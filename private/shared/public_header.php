@@ -11,7 +11,7 @@
 
 <header class="front-header">
 </id>
-<a class="logo" href="index.php">info:Distry</a>
+<a class="logo" href="index.php">Info:Distry</a>
         <div class="search">
             <div class="icon"></div>
             <div class="input">

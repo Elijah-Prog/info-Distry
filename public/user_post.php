@@ -19,7 +19,7 @@
                         </span>
                         <br>
                         <span class="post-date">
-                            <small>September 10, 2021</small>
+                            <small>Posted: September 10, 2021</small>
                         <span>
                     </section>
                     </section>
@@ -35,10 +35,11 @@
                         </section>
                     </section>
                     <section class="post-footer">
-                        <a class="like-button" href="#"><i style="width:20px; height: 20px; color:black;" class="far fa-thumbs-up"></i></a>
-                        <a class="dislike-button" href="#"><i style="width:20px; height: 20px; color:black;" class="far fa-thumbs-down"></i></a>
-                        <small class="comment-txt">Comment</small><br>
-                        <small class="report-txt">Report</small>
+                        <a class="like-button" href="#">21 <i style="width:20px; height: 20px; color:black;" class="far fa-thumbs-up"></i></a>
+                        <a class="dislike-button" href="#">12 <i style="width:20px; height: 20px; color:black;" class="far fa-thumbs-down"></i></a>
+                        <a class="like-button" href="#">55 <i style="width:20px; height: 20px; color:black;" class="far fa-laugh-squint"></i></a>
+                        <a class="comment-link" href="comments.php"><small class="comment-txt">Comments</small></a><br>
+                        <a class="report-link" href="report.php"><small class="report-txt">Report</small></a>
                     </section>
         </div>
         <br>
@@ -51,19 +52,26 @@
                         </span>
                         <br>
                         <span class="post-date">
-                            <small>September 10, 2021</small>
+                            <small>Posted: September 10, 2021</small>
                         <span>
                     </section>
                     </section>
                     <br>
                     <section class="post-content">
-                        <text>Hey there. Welcome to info:Distry website</text>
+                        <text>Checkout this guide to becoming a model. &#128525</text>
                     </section>
+                        <section class="user-file">
+                            <object data="https://cdn.website-editor.net/25dd89c80efb48d88c2c233155dfc479/files/uploaded/The-Complete-Guide-to-Trading.pdf" width="420px" height="250px" type="application/pdf">
+                                <embed src="https://cdn.website-editor.net/25dd89c80efb48d88c2c233155dfc479/files/uploaded/The-Complete-Guide-to-Trading.pdf" width="420px" height="250px" type="application/pdf">
+                                </embed>
+                            </object>
+                        </section>
                     <section class="post-footer">
-                        <a class="like-button" href="#"><i style="width:20px; height: 20px; color:black;" class="far fa-thumbs-up"></i></a>
+                        <a class="like-button" href="#">1k <i style="width:20px; height: 20px; color:black;" class="far fa-thumbs-up"></i></a>
                         <a class="dislike-button" href="#"><i style="width:20px; height: 20px; color:black;" class="far fa-thumbs-down"></i></a>
-                        <small class="comment-txt">Comment</small><br>
-                        <small class="report-txt">Report</small>
+                        <a class="like-button" href="#"><i style="width:20px; height: 20px; color:black;" class="far fa-laugh-squint"></i></a>
+                        <a class="comment-link" href="comments.php"><small class="comment-txt">Comments</small></a><br>
+                        <a class="report-link" href="report.php"><small class="report-txt">Report</small></a>
                     </section>
         </div>
         <br>
@@ -76,19 +84,25 @@
                         </span>
                         <br>
                         <span class="post-date">
-                            <small>September 10, 2021</small>
+                            <small>Posted: September 10, 2021</small>
                         <span>
                     </section>
                     </section>
                     <br>
                     <section class="post-content">
-                        <text>Hey there. Welcome to info:Distry website</text>
+                    <span class="user-post-description">
+                            <text style="text-size:10px;">When you have that one friend who eats everything and be pround of themselves. &#128512</text>
+                        </span>
                     </section>
+                    <section class="user-file">
+                            <a href="https://img.delicious.com.au/WqbvXLhs/del/2016/06/more-the-merrier-31380-2.jpg"><img style="width: 420px; height: 250px;" src="https://img.delicious.com.au/WqbvXLhs/del/2016/06/more-the-merrier-31380-2.jpg"></img></a>
+                        </section>
                     <section class="post-footer">
                         <a class="like-button" href="#"><i style="width:20px; height: 20px; color:black;" class="far fa-thumbs-up"></i></a>
                         <a class="dislike-button" href="#"><i style="width:20px; height: 20px; color:black;" class="far fa-thumbs-down"></i></a>
-                        <small class="comment-txt">Comment</small><br>
-                        <small class="report-txt">Report</small>
+                        <a class="like-button" href="#"><i style="width:20px; height: 20px; color:black;" class="far fa-laugh-squint"></i></a>
+                        <a class="comment-link" href="comments.php"><small class="comment-txt">Comments</small></a><br>
+                        <a class="report-link" href="report.php"><small class="report-txt">Report</small></a>
                     </section>
         </div>
         <br>
@@ -101,7 +115,7 @@
                         </span>
                         <br>
                         <span class="post-date">
-                            <small>September 10, 2021</small>
+                            <small>Posted: September 10, 2021</small>
                         <span>
                     </section>
                     </section>
@@ -119,8 +133,9 @@
                     <section class="post-footer">
                         <a class="like-button" href="#"><i style="width:20px; height: 20px; color:black;" class="far fa-thumbs-up"></i></a>
                         <a class="dislike-button" href="#"><i style="width:20px; height: 20px; color:black;" class="far fa-thumbs-down"></i></a>
-                        <small class="comment-txt">Comment</small><br>
-                        <small class="report-txt">Report</small>
+                        <a class="like-button" href="#"><i style="width:20px; height: 20px; color:black;" class="far fa-laugh-squint"></i></a>
+                        <a class="comment-link" href="comments.php"><small class="comment-txt">Comments</small></a><br>
+                        <a class="report-link" href="report.php"><small class="report-txt">Report</small></a>
                     </section>
         </div>
     </div>

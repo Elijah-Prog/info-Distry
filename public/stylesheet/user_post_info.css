@@ -12,7 +12,7 @@
     margin-right: auto;
     border-radius: 5px;
     max-width: 50rem;
-    height: 500px;
+    height:500px;
     overflow:unset;
     
 }
@@ -31,11 +31,26 @@
 .author_name{
 
     padding-left: 10px;
+    font-size: medium;
+}
+
+.author_name:hover{
+    cursor: pointer;
 }
 
 .post-date{
 
     padding-left: 20px;
+    font-size: small;
+}
+
+.post-date small{
+
+    background: rgb(216, 216, 216);
+}
+
+.post-date:hover{
+    cursor: pointer;
 }
 
 .author_name:hover,
@@ -96,23 +111,57 @@ iframe{
 
 .like-button{
     padding-right: 10px;
+    text-decoration: none;
+    color: black;
+    padding-bottom: 5px;
+    font-size: medium;
 }
 
 .dislike-button{
     padding-right: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: medium;
 }
 
 .comment-txt{
 
     padding-right: 10px;
+
+}
+.comment-txt:hover{
+
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.report-txt:hover{
+
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .user-post-description{
 
     display: flex;
+    text-align: center;
+    align-items: center;
+    padding-left: 5px;
 }
 
 section .post-content{
 
     display: flex;
+}
+
+.comment-link{
+
+    text-decoration: none;
+    color: black;
+}
+
+.report-link{
+
+    text-decoration: none;
+    color: black;
 }
