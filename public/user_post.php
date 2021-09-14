@@ -28,7 +28,7 @@
                             <br>
                             <section class="post-content">
                                 <span class="user-post-description">
-                                    <text style="text-size:10px;">Hey there. Welcome to info:Distry website. This is my first ever projects by myself and it is with great honor.</text>
+                                    <text style="text-size:10px;">Hey there. Welcome to info:Distry website. This is my first ever projects by myself and it is with great honor to be standing here infront of you talking about my achievements in the IT industry..</text>
                                 </span>
                                 <br>
                                 <br>
@@ -40,9 +40,9 @@
                             <section class="post-footer">
                                 <a class="like-button" href="#"><text>234</text> <i style="width:20px; height: 20px; color:black;" class="far fa-thumbs-up"></i></a>
                                 <a class="dislike-button" href="#"><text>234</text> <i style="width:20px; height: 20px; color:black;" class="far fa-thumbs-down"></i></a>
-                                <a class="comment-link" href="comments.php"><small class="comment-txt">Comments</small></a><br>
-                                <a class="report-link" href="report.php"><small class="report-txt">Report</small></a>
-                                <a class="share-link" href="share.php"><small class="report-txt">Share</small></a>
+                                <a class="comment-link" href="comments.php"><small class="comment-txt">. Comments</small></a><br>
+                                <a class="report-link" href="report.php"><small class="report-txt">. Report</small></a>
+                                <a class="share-link" href="share.php"><small class="report-txt">. Share</small></a>
                             </section>
                 </article>
                 <br>
@@ -75,9 +75,9 @@
                             <section class="post-footer">
                                 <a class="like-button" href="#"><text>234</text> <i style="width:20px; height: 20px; color:black;" class="far fa-thumbs-up"></i></a>
                                 <a class="dislike-button" href="#"><text>234</text> <i style="width:20px; height: 20px; color:black;" class="far fa-thumbs-down"></i></a>
-                                <a class="comment-link" href="comments.php"><small class="comment-txt">Comments</small></a><br>
-                                <a class="report-link" href="report.php"><small class="report-txt">Report</small></a>
-                                <a class="share-link" href="share.php"><small class="report-txt">Share</small></a>
+                                <a class="comment-link" href="comments.php"><small class="comment-txt">. Comments</small></a><br>
+                                <a class="report-link" href="report.php"><small class="report-txt">. Report</small></a>
+                                <a class="share-link" href="share.php"><small class="report-txt">. Share</small></a>
                             </section>
                 </article>
                 <br>
@@ -107,9 +107,9 @@
                             <section class="post-footer">
                                 <a class="like-button" href="#"><text>234</text> <i style="width:20px; height: 20px; color:black;" class="far fa-thumbs-up"></i></a>
                                 <a class="dislike-button" href="#"><text>234</text> <i style="width:20px; height: 20px; color:black;" class="far fa-thumbs-down"></i></a>
-                                <a class="comment-link" href="comments.php"><small class="comment-txt">Comments</small></a><br>
-                                <a class="report-link" href="report.php"><small class="report-txt">Report</small></a>
-                                <a class="share-link" href="share.php"><small class="report-txt">Share</small></a>
+                                <a class="comment-link" href="comments.php"><small class="comment-txt">. Comments</small></a><br>
+                                <a class="report-link" href="report.php"><small class="report-txt">. Report</small></a>
+                                <a class="share-link" href="share.php"><small class="report-txt">. Share</small></a>
                             </section>
                 </article>
                 <br>
@@ -141,9 +141,9 @@
                             <section class="post-footer">
                                 <a class="like-button" href="#"><text>234</text> <i style="width:20px; height: 20px; color:black;" class="far fa-thumbs-up"></i></a>
                                 <a class="dislike-button" href="#"><text>234</text> <i style="width:20px; height: 20px; color:black;" class="far fa-thumbs-down"></i></a>
-                                <a class="comment-link" href="comments.php"><small class="comment-txt">Comments</small></a><br>
-                                <a class="report-link" href="report.php"><small class="report-txt">Report</small></a>
-                                <a class="share-link" href="share.php"><small class="report-txt">Share</small></a>
+                                <a class="comment-link" href="comments.php"><small class="comment-txt">. Comments</small></a><br>
+                                <a class="report-link" href="report.php"><small class="report-txt">. Report</small></a>
+                                <a class="share-link" href="share.php"><small class="report-txt">. Share</small></a>
                             </section>
                         </article>
                 </div>

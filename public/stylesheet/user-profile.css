@@ -2,16 +2,17 @@
 
 #header_bar{
     height:50px;
-    background: #444444;
+    background: #d0d8d4;
     color: white;
 }
 #search-box{
     width:400px;
     height: 20px;
     border-radius: 5px;
-    border: none;
     padding: 4px;
+    border: 1px solid black;
     font-size: 14px;
+
 }
 
 .logo
@@ -19,9 +20,9 @@
     position:relative;
     font-family: Bondoni Moda;
     font-weight: 700;
-    color: #fff;
+    color: rgb(0, 0, 0);
     text-decoration: none;
-    font-size: 0.8em;
+    font-size: 0.6em;
     text-transform: uppercase;
     letter-spacing: 2px;
     transition: 0.6s;
@@ -46,6 +47,17 @@
     width: 100px;
     display: inline-block;
     margin: 2px;
+}
+
+#menu-button a{
+
+    text-decoration: none;
+    color: black;
+}
+
+#menu-button:hover{
+
+    text-decoration: underline;
 }
 
 #username-profile{
@@ -78,9 +90,30 @@
 
 textarea{
 
-    width: 100%;
+    width: 600px;
     border: none;
     font-family: tahoma;
     font-size: 14px;
     height: 60px;
+}
+
+#post-button-submit{
+
+    float: right;
+    background-color: rgb(21, 88, 212);
+    border: none;
+    color: white;
+    font-size: 14px;
+    width: 60px;
+    border-radius: 2px;
+}
+
+#share-text{
+
+    width: 700px;
+}
+
+#post-bar{
+
+    margin: 0;
 }

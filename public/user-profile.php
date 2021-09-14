@@ -25,9 +25,9 @@
                 <div id="username-profile">Mzukisi Makaluza</div>
                 <br>
                 <br>
-                <div id="menu-button">Timeline</div> 
-                <div id="menu-button">About</div> 
-                <div id="menu-button">Friends</div> 
+                <div id="menu-button"><a href="index.php">Timeline</a></div> 
+                <div id="menu-button"><a href="">About</a></div> 
+                <div id="menu-button"><a href="">Friends</a></div> 
             </div>
 
             <!--below Cover Area -->
@@ -35,33 +35,21 @@
 
                 <!--Distries Area -->
                 <div style="min-height :400px; flex:1;">
-                    <div id="friends-bar">
-                        Friends<br>
-
-                    <div id="friends">
-                        <img id="friends-img" src="/info-Distry/public/images/user-icon.png" alt="">
-                        <br>
-                        User1
-                    </div>
-                    <div id="friends">
-                        <img id="friends-img" src="/info-Distry/public/images/user-icon.png" alt="">
-                        <br>
-                        User1
-                    </div>
-                    <div id="friends">
-                        <img id="friends-img" src="/info-Distry/public/images/user-icon.png" alt="">
-                        <br>
-                        User1
-                    </div>
-                    
-                </div>
+                
             </div>
 
                 <!--Posts Area -->
-                <div style="min-height: 400px; flex:2.5; padding: 20px; padding-right: 0px;">
-                    <div style="border: solid thin #aaa; padding: 10px;">
+                <div style="min-height: 400px; flex:3; padding: 20px; padding-right: 20px; width: 100%;">
+                    <div id="share-text" style="border: solid thin #aaa; padding: 10px; background-color: white;">
                         <textarea placeholder="What's new?"></textarea>
                         <input id="post-button-submit" type="submit" value="Post">
+                        <br>
+                    </div>
+                    <br>
+                    <div id="post-bar">
+                            <?php include 'user_post.php'?>
+
+                        </div>
                     </div>
                 </div>
             </div>
