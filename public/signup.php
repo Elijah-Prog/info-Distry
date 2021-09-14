@@ -1,29 +1,30 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 
     
 <html>   
     <head>
-        <link rel="stylesheet" media="all" href="stylesheet/signin.css" />
+        <link rel="stylesheet" media="all" href="stylesheet/signup.css" />
     </head>
     
     <body>
-        <div class="bg-model">
-            <div class="modal-content" draggable="true">
 
-                <div class="close">+</div>
+            <h2 style="text-align:center;">Sign Up</h2>
+            <div class="signup-modal-content" draggable="true">
+                <br>
                 <img class="profile-picture" src="/info-Distry/public/images/user-icon.png" alt="" width=100px height=100px>
 
                 <form action="">
-                    <input class="login-input" type="email" placeholder="Email Address">
+                    <input class="signup-login-input" type="text" placeholder="Name">
+                    <input class="signup-login-input" type="text" placeholder="Surname">
+                    <input class="signup-login-input" type="email" placeholder="Email Address">
 
-                    <input class="login-input" type="password" placeholder="Password">
+                    <input class="signup-login-input" type="password" placeholder="Password">
+                    <input class="signup-login-input" type="password" placeholder="Re-Enter Password">
                     <br>
-                    <button class="submit" type="submit">Sign in</button>
-
-                    <p>Don't have an account yet ? <a class="sign-up" href="signup.php">Sign Up</a></p>
+                    <button class="submit" type="submit">Sign up</button>
+                    <br>
                 </form>
             </div>
-        </div>
 
         <script type="text/javascript">
             let button = document.getElementById('user-sign');

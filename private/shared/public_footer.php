@@ -23,6 +23,7 @@
             <section class="copyright">
 
             <p>Copyright &copy;  <?php echo date('Y');?> infoDistry</p>
+            <br>
                 <small>
                     In this website we share information about relevant and even entertainment topics such as movies or tv series. </br>
                     No valgur or explicit content will be allowed on the site.

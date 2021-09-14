@@ -20,7 +20,7 @@
                 <input class="choose-file" type="file"></input>
                 <br>
                 <br>
-                <textarea class="text-upload"></textarea>
+                <textarea class="text-upload" placeholder="What are you sharing?"></textarea>
                 <br>
                 <br>
                 <button class="submit-post" type="button">Send Post</button>
