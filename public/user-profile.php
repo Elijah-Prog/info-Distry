@@ -39,11 +39,9 @@
             </div>
 
                 <!--Posts Area -->
-                <div style="min-height: 400px; flex:3; padding: 20px; padding-right: 20px; width: 100%;">
-                    <div id="share-text" style="border: solid thin #aaa; padding: 10px; background-color: white;">
-                        <textarea placeholder="What's new?"></textarea>
-                        <input id="post-button-submit" type="submit" value="Post">
-                        <br>
+                <div style="min-height: 400px; flex:2.5; padding: 20px; padding-right: 20px; margin:0; width: 100%;">
+                    <div id="share-text" style="border: solid thin #aaa; padding: 10px; background-color:rgb(43, 42, 42);">
+                        <?php include 'content.php'?>
                     </div>
                     <br>
                     <div id="post-bar">

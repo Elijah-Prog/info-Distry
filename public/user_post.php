@@ -33,7 +33,7 @@
                                 <br>
                                 <br>
                                 <section class="user-file">
-                                
+                                <a href="https://images.unsplash.com/photo-1547826039-bfc35e0f1ea8?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8YXJ0fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80"><img style="width: 420px; height: 300px;" src="https://images.unsplash.com/photo-1547826039-bfc35e0f1ea8?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8YXJ0fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80"></img></a>
                                 </section>
                             </section>
                             <hr>
@@ -97,7 +97,7 @@
                             <br>
                             <section class="post-content">
                             <span class="user-post-description">
-                                    <text style="text-size:10px;">When you have that one friend who eats everything and be pround of themselves. &#128512</text>
+                                    <text style="text-size:10px;">When you have that one friend who eats everything and be pround of themselves. As if they own the world. &#128512</text>
                                 </span>
                             </section>
                             <section class="user-file">
