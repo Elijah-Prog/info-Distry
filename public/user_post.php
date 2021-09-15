@@ -40,7 +40,7 @@
                             <section class="post-footer">
                                 <a class="like-button" href="#"><text>234</text> <i style="width:20px; height: 20px; color:black;" class="far fa-thumbs-up"></i></a>
                                 <a class="dislike-button" href="#"><text>234</text> <i style="width:20px; height: 20px; color:black;" class="far fa-thumbs-down"></i></a>
-                                <a class="comment-link" href="comments.php"><small class="comment-txt">. Comments</small></a><br>
+                                <a class="comment-link" href="comments.php"><small class="comment-txt">Comments</small></a><br>
                                 <a class="report-link" href="report.php"><small class="report-txt">. Report</small></a>
                                 <a class="share-link" href="share.php"><small class="report-txt">. Share</small></a>
                             </section>
@@ -75,7 +75,7 @@
                             <section class="post-footer">
                                 <a class="like-button" href="#"><text>234</text> <i style="width:20px; height: 20px; color:black;" class="far fa-thumbs-up"></i></a>
                                 <a class="dislike-button" href="#"><text>234</text> <i style="width:20px; height: 20px; color:black;" class="far fa-thumbs-down"></i></a>
-                                <a class="comment-link" href="comments.php"><small class="comment-txt">. Comments</small></a><br>
+                                <a class="comment-link" href="comments.php"><small class="comment-txt">Comments</small></a><br>
                                 <a class="report-link" href="report.php"><small class="report-txt">. Report</small></a>
                                 <a class="share-link" href="share.php"><small class="report-txt">. Share</small></a>
                             </section>
@@ -107,7 +107,7 @@
                             <section class="post-footer">
                                 <a class="like-button" href="#"><text>234</text> <i style="width:20px; height: 20px; color:black;" class="far fa-thumbs-up"></i></a>
                                 <a class="dislike-button" href="#"><text>234</text> <i style="width:20px; height: 20px; color:black;" class="far fa-thumbs-down"></i></a>
-                                <a class="comment-link" href="comments.php"><small class="comment-txt">. Comments</small></a><br>
+                                <a class="comment-link" href="comments.php"><small class="comment-txt">Comments</small></a><br>
                                 <a class="report-link" href="report.php"><small class="report-txt">. Report</small></a>
                                 <a class="share-link" href="share.php"><small class="report-txt">. Share</small></a>
                             </section>
@@ -141,7 +141,7 @@
                             <section class="post-footer">
                                 <a class="like-button" href="#"><text>234</text> <i style="width:20px; height: 20px; color:black;" class="far fa-thumbs-up"></i></a>
                                 <a class="dislike-button" href="#"><text>234</text> <i style="width:20px; height: 20px; color:black;" class="far fa-thumbs-down"></i></a>
-                                <a class="comment-link" href="comments.php"><small class="comment-txt">. Comments</small></a><br>
+                                <a class="comment-link" href="comments.php"><small class="comment-txt">Comments</small></a><br>
                                 <a class="report-link" href="report.php"><small class="report-txt">. Report</small></a>
                                 <a class="share-link" href="share.php"><small class="report-txt">. Share</small></a>
                             </section>
@@ -149,8 +149,9 @@
                 </div>
                 
         </div>
+                &nbsp; &nbsp;
                 <div id="news-feed" style="min-height: 400px; flex:1; min-width: 400px">
-                    
+                    <?php include 'generalInfo.php'?>
                 </div>
     </div>
     </body>
