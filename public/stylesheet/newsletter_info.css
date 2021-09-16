@@ -49,6 +49,12 @@
 .admin-update{
     
     color: black;
+    padding: 10px;
+}
+
+.admin-update h2{
+
+    color: white;
 }
 
 .img-test{
@@ -56,3 +62,8 @@
     width: 200px;
 }
 
+.news-header{
+
+    background-color: #153449;
+    color: white;
+}

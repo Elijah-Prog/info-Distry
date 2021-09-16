@@ -10,7 +10,7 @@
     <br>
         <!--Top bar-->
         <div id="header_bar">
-            <div style="margin:auto; width: 800px; font-size: 30px; ">
+            <div style="margin:auto; width: 800px; font-size: 30px; padding: 10px; ">
             <a class="logo" href="index.php">Info:Distry</a> &nbsp; &nbsp; <input type="text" placeholder="Search for users" id="search-box">
             <img src="/info-Distry/public/images/user-icon.png" style="width: 40px; float: right;"></img>
             </div>
@@ -52,6 +52,10 @@
                 </div>
             </div>
         </div>
-
+        <div>
+             <?php include (SHARED_PATH .'/public_footer.php')?>
+            
+        </div>
+       
     </body>
 </html>

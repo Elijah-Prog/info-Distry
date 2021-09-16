@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 
     
 <html>   
@@ -7,10 +7,16 @@
     </head>
     
     <body>
-        <div class="bg-model">
-            <div class="modal-content" draggable="true">
 
-                <div class="close">+</div>
+
+    <div id="header_bar">
+            <div style="margin:auto; width: 800px; font-size: 30px; padding: 10px; ">
+            <a class="logo" href="index.php">Info:Distry</a> &nbsp; &nbsp;
+            <a id ="login-button" href="signup.php">Sign up</a>
+            </div>
+        </div>
+        <br>
+            <div class="login-redirect" draggable="true">
                 <img class="profile-picture" src="/info-Distry/public/images/user-icon.png" alt="" width=100px height=100px>
 
                 <form action="user-profile.php">
@@ -23,24 +29,5 @@
                     <p>Don't have an account yet ? <a class="sign-up" href="signup.php">Sign Up</a></p>
                 </form>
             </div>
-        </div>
-
-        <script type="text/javascript">
-            let button = document.getElementById('user-sign');
-
-            button.addEventListener("click", 
-
-            function(){
-
-                document.querySelector('.bg-model').style.display = 'flex';
-
-            });
-
-            let exit = document.querySelector('.close');
-            
-            exit.addEventListener("click", function() {
-	        document.querySelector('.bg-model').style.display = "none";
-            });
-        </script>
-    </body>
- </html>
+</body>
+</html>

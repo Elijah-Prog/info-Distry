@@ -1,5 +1,47 @@
 <!DOCTYPE html>
 
+
+<?php
+
+
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+    include ("classes/connect.php");
+    include ("classes/signup.php");
+
+    $first_name = "";
+    $last_name = "";
+    $gender = "";
+    $email = "";
+
+    if($_SERVER['REQUEST_METHOD'] == 'POST'){
+
+
+        
+
+        $signup = new Signup();
+        $result = $signup->evaluate($_POST);
+
+            if($result != ""){
+                        echo "<div style='text-align:center; background-color:grey;'>";
+                        echo $result;
+                        echo "</div>";
+                    }else{header("Location:signin_redirectt.php ");die;}
+                        
+                        
+
+                    
+
+        $first_name = $_POST['first_name'];
+        $last_name = $_POST['last_name'];
+        $gender = $_POST['gender'];
+        $email = $_POST['email'];
+    }
+
+    
+?>
     
 <html>   
     <head>
@@ -8,40 +50,37 @@
     
     <body>
 
-            <h2 style="text-align:center;">Sign Up</h2>
-            <div class="signup-modal-content" draggable="true">
-                <br>
+    <div id="header_bar">
+            <div style="margin:auto; width: 800px; font-size: 30px; padding: 10px; ">
+            <a class="logo" href="index.php">Info:Distry</a> &nbsp; &nbsp;
+            <a id ="login-button" href="signin_redirect.php">Log in</a>
+            </div>
+        </div>
+        <br>
+
+                <form class="signup-modal-content" method="post" action="">
                 <img class="profile-picture" src="/info-Distry/public/images/user-icon.png" alt="" width=100px height=100px>
+                    <input value = "<?php echo $first_name ?>" name="first_name" class="signup-login-input" type="text" placeholder="Name" id="text">
+                    <input value = "<?php echo $last_name ?>" name="last_name" class="signup-login-input" type="text" placeholder="Surname" id="text">
+                    <input value = "<?php echo $email ?>" name="email" class="signup-login-input" type="email" placeholder="Email Address" id="text">
+                    <span style="font-weight: normal;">Gender: </span><br>
+                    <select name="gender" class="signup-login-input" name="" id="text">
 
-                <form action="">
-                    <input class="signup-login-input" type="text" placeholder="Name">
-                    <input class="signup-login-input" type="text" placeholder="Surname">
-                    <input class="signup-login-input" type="email" placeholder="Email Address">
-
-                    <input class="signup-login-input" type="password" placeholder="Password">
-                    <input class="signup-login-input" type="password" placeholder="Re-Enter Password">
+                        <option><?php echo $gender ?></option>
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Other</option>
+                    </select>
+                    <br><br>
+                    <input name="password" class="signup-login-input" type="password" placeholder="Password" id="text">
+                    <input name="re-password" class="signup-login-input" type="password" placeholder="Re-Enter Password" id="text">
+                    <br>
+                    <input class="checkbox-terms" type="checkbox" name="terms_and_conditions" value="Yes"> I have read and understood all the terms and conditions of this <br> and willing to proceed to the profile page. If not click <a href="terms.php">here.</a><br>
                     <br>
                     <button class="submit" type="submit">Sign up</button>
                     <br>
                 </form>
-            </div>
 
-        <script type="text/javascript">
-            let button = document.getElementById('user-sign');
-
-            button.addEventListener("click", 
-
-            function(){
-
-                document.querySelector('.bg-model').style.display = 'flex';
-
-            });
-
-            let exit = document.querySelector('.close');
-            
-            exit.addEventListener("click", function() {
-	        document.querySelector('.bg-model').style.display = "none";
-            });
-        </script>
+        <?php include 'signin.php'?>
     </body>
  </html>

@@ -1,3 +1,5 @@
+
+@import url('https://fonts.googleapis.com/css?family=Courier:200,300,400,500,600,700,800,900&display=swap');
 #user-post-info{
 
     text-align: center;
@@ -141,7 +143,14 @@ iframe{
     display: flex;
     text-align: center;
     align-items: center;
-    padding-left: 5px;
+    padding-left: 15px;
+    width: 550px;
+}
+
+.user-post-description text{
+
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
 }
 
 section .post-content{

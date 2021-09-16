@@ -18,7 +18,8 @@
              
             <?php $currentDate = date("Y-m-d");?>
             
-            <div class="admin-update">Today the MyInfo site reached top 1 in the daily website reviews. Check it Out <p><a class="review" href= "#">dailydose.com/reviews</a></p>
+            <div class="admin-update">
+                Today the MyInfo site reached top 1 in the daily website reviews. Check it Out <p><a class="review" href= "#">dailydose.com/reviews</a></p>
         
                 Watch the latest Lucifer now on NETFLIX.
                 Only available to premium users.

@@ -9,7 +9,7 @@
 
     <body>
         <div style="display: flex;">
-            <div id="post-section" style="min-height :400px; flex:2.5;">
+            <div id="post-section" style="min-height :400px; flex:2;">
                 <br>
                 <div id="content-post">
                     <article id="user-post-info">
@@ -134,7 +134,7 @@
                                 <br>
                                 <br>
                                 <section class="user-file">
-                                    <iframe width=420px height=250px src="https://www.youtube.com/embed/tgbNymZ7vqY">></iframe>
+                                    <iframe width=450px height=300px src="https://www.youtube.com/embed/tgbNymZ7vqY">></iframe>
                                 </section>
                             </section>
                             <hr>

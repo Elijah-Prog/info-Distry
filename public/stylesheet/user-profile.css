@@ -4,6 +4,10 @@
     height:50px;
     background: #d0d8d4;
     color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 #search-box{
     width:400px;
@@ -116,4 +120,5 @@ textarea{
 #post-bar{
 
     margin: 0;
+    width: 100%;
 }

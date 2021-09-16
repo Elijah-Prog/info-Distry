@@ -17,7 +17,7 @@
                 &nbsp;
                 <h3>upload a Post</h3>
                 <br>
-                <input class="choose-file" type="file"></input>
+                <input class="choose-file" type="file" accept="image/png, image/gif, image/jpeg, video/mp4, video/mkv,application/pdf"></input>
                 <br>
                 <br>
                 <textarea class="text-upload" placeholder="What are you sharing?"></textarea>
