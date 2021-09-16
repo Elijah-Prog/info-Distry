@@ -3,13 +3,8 @@
 
 <?php
 
-
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-
-    include ("classes/connect.php");
-    include ("classes/signup.php");
+    include_once ("classes/connect.php");
+    include_once ("classes/signup.php");
 
     $first_name = "";
     $last_name = "";
@@ -28,7 +23,7 @@ error_reporting(E_ALL);
                         echo "<div style='text-align:center; background-color:grey;'>";
                         echo $result;
                         echo "</div>";
-                    }else{header("Location:signin_redirectt.php ");die;}
+                    }else{header("Location:signin_redirect.php ");die;}
                         
                         
 

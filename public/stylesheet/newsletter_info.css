@@ -50,11 +50,13 @@
     
     color: black;
     padding: 10px;
+    font-family:Courier, monospace ;
 }
 
 .admin-update h2{
 
     color: white;
+    
 }
 
 .img-test{

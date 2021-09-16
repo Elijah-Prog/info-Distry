@@ -48,7 +48,7 @@ body{
     margin: 15px auto;
     height: 40px;
     border: 1px solid black;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 #header_bar{
@@ -75,6 +75,8 @@ body{
     height: 30px;
     text-align: center;
     padding-top: 5px;
+    font-weight: bold;
+    font-family: sans-serif;
 }
 
 #login-button:hover{

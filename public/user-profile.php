@@ -1,5 +1,34 @@
 <!DOCTYPE html>
 
+<?php
+
+session_start();
+
+    
+
+    include_once ("classes/connect.php");
+    include_once ("classes/login.php");
+
+    if(isset($_SESSION['userid']) && is_numeric($_SESSION['userid'])){
+
+        $id = $_SESSION['userid'];
+        $login = new Login();
+
+        $result = $login->check_login($id);
+
+        var_dump($result);
+
+        if($result){
+            
+            echo "Everything is fine";
+        }else{
+
+            header("Location:signin_redirect.php");die;
+        }
+    }
+
+?>
+
 <html>
     <head>
         <title>Profile | info:Distry</title>
@@ -52,10 +81,6 @@
                 </div>
             </div>
         </div>
-        <div>
-             <?php include (SHARED_PATH .'/public_footer.php')?>
-            
-        </div>
-       
+        
     </body>
 </html>
