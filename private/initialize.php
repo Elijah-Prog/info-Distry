@@ -4,5 +4,5 @@
     define("PUBLIC_PATH", PROJECT_PATH . '/public');
     define("SHARED_PATH", PRIVATE_PATH . '/shared');
 
-    require_once ('functions.php')
+    require_once ('functions.php');
 ?>
