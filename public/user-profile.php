@@ -52,9 +52,18 @@
             <div style="margin:auto; width: 800px; font-size: 30px; padding: 10px; ">
             <a class="logo" href="index.php">Info:Distry</a> &nbsp; &nbsp; <input type="text" placeholder="Search for users" id="search-box">
 
+            <?php
+
+                $image = "";
+
+                if(file_exists($user_data['profile_image'])){
+
+                    $image = $user_data['profile_image'];
+                }
+
+                ?>
             
-            
-            <img src="/info-Distry/public/images/user-icon.png" style="width: 40px; float: right;"></img>
+            <img src="<?php echo $image; ?>" style="width: 40px; float: right; border-radius: 200px;"></img>
             <a href="logout.php">
             <span style="font-size: 16px; float: right; background-color: black; border-radius: 200px; width: 70px; text-align: center; margin: 10px; color: white; height: 20px">Logout</span>
             </a>
@@ -67,13 +76,25 @@
             <div style="background-color: white; text-align: center;">
                 <img src="/info-Distry/public/images/ashim-d-silva-WeYamle9fDM-unsplash.jpg" alt=""  style="width: 100%; height: 250px;">
                 <span style="font-size: 12px;">
-                    <img src="/info-Distry/public/images/user-icon.png" alt="" id="profile-picture"><br>
+
+                    <?php
+
+                        $image = "";
+
+                        if(file_exists($user_data['profile_image'])){
+
+                            $image = $user_data['profile_image'];
+                        }
+                    
+                    ?>
+                    <img src="<?php echo $image ?>" alt="" id="profile-picture"><br>
             <a style="text-decoration: none;" href="change_image_profile.php">Change Image</a>
                     
                 </span><br>
                 <div id="username-profile"><?php echo $user_data['first_name'] ." ". $user_data['last_name'] ?></div>
                 <br>
                 <br>
+                <hr>
                 <div id="menu-button"><a href="index.php">Timeline</a></div> 
                 <div id="menu-button"><a href="">About</a></div> 
                 <div id="menu-button"><a href="">Friends</a></div> 

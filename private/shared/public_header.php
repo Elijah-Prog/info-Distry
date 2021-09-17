@@ -21,7 +21,17 @@
         </div>
         <ul class="nav-options">
             <a class="user-icon-log" href="user-profile.php" style="">
-            <img class="user-post-icon" src="../public/images/user-icon.png" alt="" width=50px height=50px>
+            <?php
+
+                $image = "";
+
+                if(file_exists($user_data['profile_image'])){
+
+                    $image = $user_data['profile_image'];
+                }
+
+            ?>
+            <img class="user-post-icon" src="<?php echo $image;?>" alt="" width=50px height=50px>
             </a>
             <li><a href="index.php">Home</a></li>
             <li><a href="notifications.php">Notifications</a></li>

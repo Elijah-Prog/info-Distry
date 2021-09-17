@@ -249,3 +249,8 @@ header.sticky .user-icon-log{
     text-decoration: none;
     text-align: center;
 }
+
+.user-post-icon{
+
+    border-radius: 200px;
+}
