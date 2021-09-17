@@ -1,3 +1,18 @@
+<?php
+
+
+session_start();
+
+include_once ("classes/connect.php");
+include_once ("classes/login.php");
+include_once ("classes/user.php");
+include_once ("classes/post.php");
+
+$login = new Login();
+
+$user_data = $login->check_login($_SESSION['userid']);
+
+?>
 <html>
     <head>
         <meta charset="utf-8">
@@ -20,7 +35,6 @@
         <br>
         <br>
         <!--Modal Section-->
-        <?php include 'content.php'?>
         <?php include 'signin.php'?> 
         
         <br>

@@ -1,0 +1,50 @@
+
+
+
+
+#user-profile-content{
+    width: 1000px;
+    margin: auto;
+    height: 600px;
+}
+
+#header_bar{
+    height:60px;
+    background: #bec1d4;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+#search-box{
+    width:400px;
+    height: 30px;
+    border-radius: 5px;
+    padding: 4px;
+    border: 1px solid black;
+    font-size: 14px;
+
+}
+
+.logo
+{
+    position:relative;
+    font-family: Bondoni Moda;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 0.6em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+
+#profile-picture{
+
+    width: 150px;
+    margin-top: -180px;
+    border: solid 2px white;
+    border-radius: 50%;
+}

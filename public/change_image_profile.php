@@ -1,0 +1,54 @@
+<?php
+
+
+session_start();
+
+include_once ("classes/connect.php");
+include_once ("classes/login.php");
+include_once ("classes/user.php");
+include_once ("classes/post.php");
+
+$login = new Login();
+
+$user_data = $login->check_login($_SESSION['userid']);
+
+?>
+
+
+
+<html>
+    <head>
+
+    <title>Change Profile Image | <?php echo $user_data['first_name']?></title>
+
+    <link rel="stylesheet" media="all" href="stylesheet/image_profile.css" />
+
+    </head>
+
+    <body>
+
+    <div id="header_bar">
+            <div style="margin:auto; width: 800px; font-size: 30px; padding: 10px; ">
+            <a class="logo" href="index.php">Info:Distry</a> &nbsp; &nbsp; <input type="text" placeholder="Search for users" id="search-box">
+            <a href="user-profile.php">
+                <img src="/info-Distry/public/images/user-icon.png" style="width: 40px; float: right;"></img>
+            </a>
+            <a href="logout.php">
+            <span style="font-size: 16px; float: right; background-color: black; border-radius: 200px; width: 70px; text-align: center; margin: 10px; color: white; height: 20px">Logout</span>
+            </a>
+            </div>
+        </div>
+
+<div id="user-profile-content">
+            <div style="background-color: white; text-align: center;">
+                <img src="/info-Distry/public/images/ashim-d-silva-WeYamle9fDM-unsplash.jpg" alt=""  style="width: 100%; height: 250px;">
+                <img src="/info-Distry/public/images/user-icon.png" alt="" id="profile-picture"><br>
+                <div id="username-profile"><?php echo $user_data['first_name'] ." ". $user_data['last_name'] ?></div>
+                <br>
+                <br>
+            </div>
+
+
+    </body>
+
+</html>

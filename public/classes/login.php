@@ -6,12 +6,18 @@ class Login{
 
     public function evaluate($data){
         
-        $email = addslashes($data['email']);
-        $password = addslashes($data['password']);
+        if(isset($_POST['email'])){
+            $email = addslashes($data['email']);
+        }else{
+
+            $this->error .= "No email was found<br>";
+        }
+        
+        if(isset($_POST['password'])){
+            $password = addslashes($data['password']);
+        }
         
         
-
-
         $query = "select * from users where email = '$email' limit 1 ";
 
 
@@ -43,20 +49,31 @@ class Login{
     }
 
     public function check_login($id){
+        
+        
+        if(is_numeric($id)){
 
-        $query = "select userid from users where userid = '$id' limit 1 ";
+            $query = "select * from users where userid = '$id' limit 1 ";
 
 
-        $DB = new DB();
-        $result = $DB->read($query);
+            $DB = new DB();
+            $result = $DB->read($query);
 
-        if($result){
+            if($result){
 
-            return true;
+                $user_data = $result['0'];
 
-        }
+                return $user_data;
 
-        return false;
+            }else{
+
+                header("Location:signin_redirect.php");die;
+            }
+
+        }else{
+
+                header("Location:signin_redirect.php");die;
+            }
 
     }
 }

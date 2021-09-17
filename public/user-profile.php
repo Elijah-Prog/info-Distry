@@ -2,36 +2,46 @@
 
 <?php
 
-session_start();
-
-    
+    session_start();
 
     include_once ("classes/connect.php");
     include_once ("classes/login.php");
+    include_once ("classes/user.php");
+    include_once ("classes/post.php");
 
-    if(isset($_SESSION['userid']) && is_numeric($_SESSION['userid'])){
+    $login = new Login();
 
+    $user_data = $login->check_login($_SESSION['userid']);
+
+    //for posting
+
+    if($_SERVER['REQUEST_METHOD'] == "POST"){
+
+        $post = new Post();
         $id = $_SESSION['userid'];
-        $login = new Login();
+        $result = $post->create_post($id,$_POST);
 
-        $result = $login->check_login($id);
+        if($result == ""){
 
-        var_dump($result);
-
-        if($result){
-            
-            echo "Everything is fine";
+            header("Location: user-profile.php");die;
         }else{
-
-            header("Location:signin_redirect.php");die;
+            echo "<div style='text-align:center; background-color:grey;'>";
+            echo "Following error occured: <br><br>";
+            echo $result;
+            echo "</div>";
         }
     }
+
+    //collect posts
+        $post = new Post();
+        $id = $_SESSION['userid'];
+        $posts = $post->get_posts($id,$_POST);
 
 ?>
 
 <html>
     <head>
-        <title>Profile | info:Distry</title>
+        <title>Profile | <?php echo $user_data['first_name']?></title>
         <meta charset="utf-8">
         <link rel="stylesheet" media="all" href="stylesheet/user-profile.css" />
     </head>
@@ -41,7 +51,13 @@ session_start();
         <div id="header_bar">
             <div style="margin:auto; width: 800px; font-size: 30px; padding: 10px; ">
             <a class="logo" href="index.php">Info:Distry</a> &nbsp; &nbsp; <input type="text" placeholder="Search for users" id="search-box">
+
+            
+            
             <img src="/info-Distry/public/images/user-icon.png" style="width: 40px; float: right;"></img>
+            <a href="logout.php">
+            <span style="font-size: 16px; float: right; background-color: black; border-radius: 200px; width: 70px; text-align: center; margin: 10px; color: white; height: 20px">Logout</span>
+            </a>
             </div>
         </div>
         
@@ -50,8 +66,12 @@ session_start();
         <div id="user-profile-content">
             <div style="background-color: white; text-align: center;">
                 <img src="/info-Distry/public/images/ashim-d-silva-WeYamle9fDM-unsplash.jpg" alt=""  style="width: 100%; height: 250px;">
-                <img src="/info-Distry/public/images/user-icon.png" alt="" id="profile-picture"><br>
-                <div id="username-profile">Mzukisi Makaluza</div>
+                <span style="font-size: 12px;">
+                    <img src="/info-Distry/public/images/user-icon.png" alt="" id="profile-picture"><br>
+            <a style="text-decoration: none;" href="change_image_profile.php">Change Image</a>
+                    
+                </span><br>
+                <div id="username-profile"><?php echo $user_data['first_name'] ." ". $user_data['last_name'] ?></div>
                 <br>
                 <br>
                 <div id="menu-button"><a href="index.php">Timeline</a></div> 
@@ -74,7 +94,9 @@ session_start();
                     </div>
                     <br>
                     <div id="post-bar">
-                            <?php include 'user_post.php'?>
+                            <?php 
+                            include 'user_post.php'
+                            ?>
 
                         </div>
                     </div>

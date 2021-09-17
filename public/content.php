@@ -17,15 +17,17 @@
                 &nbsp;
                 <h3>upload a Post</h3>
                 <br>
-                <input class="choose-file" type="file" accept="image/png, image/gif, image/jpeg, video/mp4, video/mkv,application/pdf"></input>
-                <br>
-                <br>
-                <textarea class="text-upload" placeholder="What are you sharing?"></textarea>
-                <br>
-                <br>
-                <button class="submit-post" type="button">Send Post</button>
-                <br>
-                <br>
+                <form method="post">
+                    <input class="choose-file" type="file" accept="image/png, image/gif, image/jpeg, video/mp4, video/mkv,application/pdf"></input>
+                    <br>
+                    <br>
+                    <textarea name="post" class="text-upload" placeholder="What are you sharing?"></textarea>
+                    <br>
+                    <br>
+                    <button class="submit-post" type="submit">Send Post</button>
+                    <br>
+                    <br>
+            </form>
             </section>
             </div>
             <br>  

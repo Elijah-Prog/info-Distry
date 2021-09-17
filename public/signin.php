@@ -3,7 +3,7 @@
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
-session_start();
+//session_start();
 
     include_once ("classes/connect.php");
     include_once ("classes/login.php");
@@ -49,6 +49,7 @@ session_start();
                     <button class="submit" type="submit">Sign in</button>
 
                     <p>Don't have an account yet ? <a class="sign-up" href="signup.php">Sign Up</a></p>
+                    <br><br>
                 </form>
             </div>
         </div>

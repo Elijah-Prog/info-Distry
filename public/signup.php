@@ -55,6 +55,7 @@
 
                 <form class="signup-modal-content" method="post" action="">
                 <img class="profile-picture" src="/info-Distry/public/images/user-icon.png" alt="" width=100px height=100px>
+                <hr>
                     <input value = "<?php echo $first_name ?>" name="first_name" class="signup-login-input" type="text" placeholder="Name" id="text">
                     <input value = "<?php echo $last_name ?>" name="last_name" class="signup-login-input" type="text" placeholder="Surname" id="text">
                     <input value = "<?php echo $email ?>" name="email" class="signup-login-input" type="email" placeholder="Email Address" id="text">
@@ -70,6 +71,7 @@
                     <input name="password" class="signup-login-input" type="password" placeholder="Password" id="text">
                     <input name="re-password" class="signup-login-input" type="password" placeholder="Re-Enter Password" id="text">
                     <br>
+                    <hr>
                     <input class="checkbox-terms" type="checkbox" name="terms_and_conditions" value="Yes"> I have read and understood all the terms and conditions of this <br> and willing to proceed to the profile page. If not click <a href="terms.php">here.</a><br>
                     <br>
                     <button class="submit" type="submit">Sign up</button>

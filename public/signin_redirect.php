@@ -56,8 +56,6 @@ session_start();
                     <input name="password" value = "<?php echo $password ?>" class="login-input" type="password" placeholder="Password">
                     <br>
                     <button class="submit" type="submit">Sign in</button>
-
-                    <p>Don't have an account yet ? <a class="sign-up" href="signup.php">Sign Up</a></p>
                 </form>
             </div>
 </body>
