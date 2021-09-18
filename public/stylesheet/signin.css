@@ -41,6 +41,12 @@
     
 }
 
+.submit:hover{
+
+    background-color: black;
+    color: white;
+}
+
 .login-input{
 
     width: 60%;

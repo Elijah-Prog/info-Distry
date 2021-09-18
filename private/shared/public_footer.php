@@ -10,16 +10,18 @@
         <footer class="public-footer">
             Send Us Queries: 
             <br>
-            <input class="query-email" type="email" placeholder="Your email address" name="user-email"></input>
-            <br>
-            <br><textarea class="queries" type="text"></textarea>
-            <br>
+                    <input class="query-email" type="email" placeholder="Your email address" name="email"></input>
+                    <br>
+                    <br><textarea class="queries" type="text" name="query"></textarea>
+                    <br>
+                    &nbsp;
+                    <br>
+                    <input class="query-submit" type="submit" onclick="alertMe()" value="Submit Query"></input>
+            &nbsp;
+            &nbsp;
             &nbsp;
             <br>
-            <button class="query-submit" type="submit" onclick="alertMe()" value="Click-2-Alert">Submit Query</button>
-            &nbsp;
-            &nbsp;
-            &nbsp;
+            <br>
             <section class="copyright">
 
             <p>Copyright &copy;  <?php echo date('Y');?> infoDistry</p>

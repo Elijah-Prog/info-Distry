@@ -9,7 +9,21 @@
 .copyright{
 
     padding: 20px;
+    width: 100%;
+    background-color: #2b2a2a;
 }
+
+.copyright p{
+
+    color: white;
+}
+
+.copyright small{
+
+    color: white;
+}
+
+
 .query-email{
 
     width: 450px;
@@ -35,6 +49,12 @@
     width: 100px;
     border: none;
     cursor: pointer;
+}
+
+.query-submit:hover{
+
+    background-color: black;
+    color: white;
 }
 
 .logo{

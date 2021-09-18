@@ -74,12 +74,33 @@
 
         <div id="user-profile-content">
             <div style="background-color: white; text-align: center;">
-                <img src="/info-Distry/public/images/ashim-d-silva-WeYamle9fDM-unsplash.jpg" alt=""  style="width: 100%; height: 250px;">
+
+            <?php
+
+                $image = "/info-Distry/public/images/placeholder.jpg";
+
+                if(file_exists($user_data['cover_image'])){
+
+                    $image = $user_data['cover_image'];
+                }
+
+            ?>
+
+            <a href="change_image_profile.php?change=cover_picture">
+
+                <img src="<?php echo $image; ?>" alt=""  style="width: 100%; height: 250px;">
+
+            </a>
                 <span style="font-size: 12px;">
 
                     <?php
 
-                        $image = "";
+                        $image = "/info-Distry/public/images/male.png";
+
+                        if($user_data['gender'] == "Female"){
+
+                            $image = "/info-Distry/public/images/female.png";
+                        }
 
                         if(file_exists($user_data['profile_image'])){
 
@@ -87,8 +108,12 @@
                         }
                     
                     ?>
-                    <img src="<?php echo $image ?>" alt="" id="profile-picture"><br>
-            <a style="text-decoration: none;" href="change_image_profile.php">Change Image</a>
+                   
+            <a style="text-decoration: none;" href="change_image_profile.php?change=profile_picture">
+
+                <img src="<?php echo $image ?>" alt="" id="profile-picture"><br>
+        
+            </a>
                     
                 </span><br>
                 <div id="username-profile"><?php echo $user_data['first_name'] ." ". $user_data['last_name'] ?></div>

@@ -20,7 +20,7 @@
             <span class="clear" onclick="document.getElementById('mysearch').value = ''"></span>
         </div>
         <ul class="nav-options">
-            <a class="user-icon-log" href="user-profile.php" style="">
+            <a class="user-icon-log" href="user-profile.php?" style="">
             <?php
 
                 $image = "";
@@ -28,6 +28,10 @@
                 if(file_exists($user_data['profile_image'])){
 
                     $image = $user_data['profile_image'];
+                }
+                else{
+
+                    $image = "../public/images/user-icon.png";
                 }
 
             ?>
