@@ -3,17 +3,19 @@
 #user-post-info{
 
     text-align: center;
-    display: block;
-    width: 600px;
+    display:flex ,block;
+    width: 700px;
     background-color: rgb(255, 255, 255);
     align-items: center;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 5px;
+    border-radius: 0px;
     max-width: 50rem;
     height:fit-content;
     overflow:unset;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.3);
+    transition: opacity 0.5 ease 0.4s;
 }
 
 
@@ -22,17 +24,17 @@
     height: 60px;
     text-align: left;
     padding: 8px;
-    border-radius: 15px;
+    border-radius: 0px;
     display: flex;
-    
 }
 
 .author_name{
 
     padding-left: 10px;
-    font-size: medium;
+    font-size: 15px;
     text-decoration: none;
     color: black;
+    font-family: Poppins, sans-serif;
 }
 
 .author_name:hover{
@@ -50,25 +52,17 @@
     background: rgb(216, 216, 216);
 }
 
-.post-date:hover{
-    cursor: pointer;
-}
-
-.author_name:hover,
-.post-date:hover{
+.author_name:hover{
 
     text-decoration: underline;
 }
 
 #content-post{
-    height: 250px;
-    background-color: #2b2a2a ;
+    height: auto;
+    background-color: rgb(214, 213, 211);
     float:none;
-    overflow: scroll;
-    overflow-x: hidden;
-    overflow-y: auto;
+    
     max-width: 800px;
-    min-height: 1000px;
     display: flex;
     flex-direction: column;
     padding: 12px;
@@ -92,13 +86,14 @@
 
 .post-footer{
 
-    height: 60px;
+    height: 55px;
     text-align: left;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 0px;
     display: flex;
     background: rgb(255, 255, 255);
-    padding-bottom: 10px;
+    padding-bottom: 0px;
+    font-family: Poppins, sans-serif;
 }
 
 iframe{
@@ -112,6 +107,7 @@ iframe{
     color: black;
     padding-bottom: 5px;
     font-size: medium;
+    height: fit-content;
 }
 
 .dislike-button{
@@ -119,6 +115,7 @@ iframe{
     text-decoration: none;
     color: black;
     font-size: medium;
+    height: fit-content;
 }
 
 .comment-txt{
@@ -143,14 +140,18 @@ iframe{
     display: flex;
     text-align: center;
     align-items: center;
-    padding-left: 15px;
-    width: 550px;
+    padding-left: 0px;
+    width: 650px;
+    justify-content: center;
+    margin: auto;
 }
 
 .user-post-description text{
 
     font-family: 'Courier New', Courier, monospace;
-    font-size: medium;
+    font-weight:500;
+    width: 650px;
+    overflow-x: hidden;
 }
 
 section .post-content{
@@ -158,16 +159,19 @@ section .post-content{
     display: flex;
 }
 
+
 .comment-link{
 
     text-decoration: none;
     color: black;
+    height: 15px;
 }
 
 .report-link{
 
     text-decoration: none;
     color: black;
+    height: 15px;
 }
 
 .verified{
@@ -181,17 +185,57 @@ section .post-content{
     text-align: center;
     align-items: center;
     justify-content: center;
+    transition: 0.2s;
 }
+
+
+
+
 
 .share-link{
 
     text-decoration: none;
     color: black;
     padding-left: 10px;
+    height: 15px;
 }
 
 #news-feed{
 
-    background-color: white;
-    padding-right: 0px;
+    background-color: #d6d5d3;
+    padding-left: 10px;
+}
+
+.edit-link{
+
+    text-decoration: none;
+    color: rgb(134, 134, 134);
+    padding-left: 10px;
+    height: 15px;
+}
+.delete-link{
+
+    text-decoration: none;
+    color: rgb(131, 131, 131);
+    padding-left: 10px;
+    height: 15px;
+}
+
+#user-information{
+
+    padding-right: 400px;
+    width: auto;
+}
+
+.add-user span{
+
+    cursor: pointer;
+    padding-top: 0px;
+    font-family: Roboto, Arial, sans-serif ;
+}
+
+.add-user:hover{
+
+    opacity: 0.7;
+    transition: 0.3s;
 }

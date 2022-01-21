@@ -1,6 +1,5 @@
 
 .signup-modal-content{
-
     width: 500px;
     height: 100%;
     background-color: rgb(238, 238, 238);
@@ -14,7 +13,7 @@
     left: 0;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 body{
@@ -48,7 +47,7 @@ body{
     margin: 15px auto;
     height: 40px;
     border: 1px solid black;
-    border-radius: 5px;
+    border-radius: 0px;
 }
 
 #header_bar{
@@ -68,21 +67,21 @@ body{
     text-decoration: none;
     float: right;
     background-color: black;
-    font-size: 20px;
+    font-size: 15px;
     color: white;
     border-radius: 200px 200px 200px 200px;
-    width:90px ;
-    height: 30px;
+    width:80px ;
+    height: 25px;
     text-align: center;
     padding-top: 5px;
-    font-weight: bold;
-    font-family: sans-serif;
+    font-family: Roboto,Arial,sans-serif;
 }
 
 #login-button:hover{
 
     background-color: white;
     color: black;
+    transition: 0.5s;
 }
 
 .logo

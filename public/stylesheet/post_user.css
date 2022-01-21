@@ -1,26 +1,31 @@
 .content{
-    background-color: rgb(250, 217, 155);
-    width: fit-content;
+    background-color: rgb(255, 255, 255);
+    width: 800;
     text-align:center;
-    border-radius: 15px;
+    border-radius: 0px;
     margin: 0 auto;
+    
+    min-height: 300px;
 }
 
 h2{
 
     text-align: center;
     font: Verdana;
+    color: black;
 }
 
 .text-upload{
 
     width: 400px;
     height: 100px;
-    min-width: 400px;
-    max-width: 700px;
+    min-width: 500px;
+    max-width: 500px;
     min-height: 100px;
     max-height: 300px;
     border: 1px solid black;
+    padding:5px;
+    margin-right: -5px;
 }
 
 .submit-post{
@@ -31,6 +36,13 @@ h2{
     border-radius: 15px 15px;
     border: none;
     cursor: pointer;
+    float: right;
+    margin-right: 40px;
+}
+
+.submit-post:hover{
+
+    opacity: 0.9;
 }
 
 .choose-file ::-webkit-file-upload-button::before{
@@ -43,7 +55,21 @@ h2{
 
     background-color: #8eb9b9;
     border-radius: 0px 15px 15px 0px;
+    cursor: pointer;
 }
+
+#file-choose:hover{
+
+    opacity:0.9;
+   
+
+}
+#file-choose{
+    margin-left:50px;
+    right:100px;
+}
+
+
 
 
 

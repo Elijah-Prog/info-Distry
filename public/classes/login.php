@@ -42,7 +42,7 @@ class Login{
 
         }else{
 
-            $this->error .= "No such email was found<br>";
+            $this->error .= "Incorrect password or Email<br>";
         }
 
         return $this->error;

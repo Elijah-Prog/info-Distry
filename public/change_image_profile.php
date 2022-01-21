@@ -3,13 +3,8 @@
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
-session_start();
 
-include_once ("classes/connect.php");
-include_once ("classes/login.php");
-include_once ("classes/user.php");
-include_once ("classes/post.php");
-include_once ("classes/image.php");
+include_once ("classes/autoload.php");
 
     $login = new Login();
 
@@ -20,11 +15,11 @@ include_once ("classes/image.php");
         if(isset($_FILES['file']['name']) && $_FILES['file']['name'] !== ""){
 
 
-            if($_FILES['file']['type'] == "image/jpeg"){
+            if($_FILES['file']['type'] == "image/jpeg" || $_FILES['file']['type'] == "image/png"){
 
 
                 
-                $allowed_size = (1024 * 1024) * 5;
+                $allowed_size = (1024 * 1024) * 10;
                 if($_FILES['file']['size'] < $allowed_size){
 
 
@@ -85,8 +80,15 @@ include_once ("classes/image.php");
 
                         $query = "update users set profile_image = '$filename' where userid = '$userid' limit 1 ";
                     }
+
+                  
                     $DB = new DB();
-                    $DB->save($query);
+                    $DB->save($query); 
+                    
+                    //create a post
+                    $post = new Post();
+                    $post->create_post($userid,$_POST,$filename);
+
 
                     header("Location: user-profile.php");
                     
@@ -123,7 +125,11 @@ include_once ("classes/image.php");
 <html>
     <head>
 
-    <title>Change Profile Image | <?php echo $user_data['first_name']?></title>
+    <title> <?php echo $_GET['change']?>| <?php echo $user_data['first_name']?></title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google" content="notranslate">
 
     <link rel="stylesheet" media="all" href="stylesheet/image_profile.css" />
 
@@ -132,8 +138,8 @@ include_once ("classes/image.php");
     <body>
 
     <div id="header_bar">
-            <div style="margin:auto; width: 800px; font-size: 30px; padding: 10px; ">
-            <a class="logo" href="index.php">Info:Distry</a> &nbsp; &nbsp; <input type="text" placeholder="Search for users" id="search-box">
+            <div style="margin:auto; width: 800px; font-size: 30px; padding: 5px; ">
+            <a class="logo" href="index.php">WRLDNET2.0</a> &nbsp; &nbsp;
 
             <span>
             <?php
@@ -172,7 +178,7 @@ include_once ("classes/image.php");
             <?php
                         $image = "/info-Distry/public/images/placeholder.jpg";
 
-                        if(file_exists($user_data['profile_image'])){
+                        if(file_exists($user_data['cover_image'])){
 
                         $image = $user_data['cover_image'];
                         }
@@ -204,8 +210,8 @@ include_once ("classes/image.php");
             
             </div>
             <form method="post" enctype="multipart/form-data">
-                <div style="background-color: #fad99b; text-align: center; height: 50px">
-                <input  style="float:left; padding:15px;" type="file" name="file"> <input style="float:right; height:25px; background-color:#bec1d4;" type="submit" value="Upload Picture">
+                <div style="background-color: #fad99b; text-align: center; height: 100px">
+                <label style="padding:5px;padding-right:5px;"><input style="display:none;" type="file" name="file" accept="image/*"><div id="file-choose" style="width:100px;background-color:#0670c7;text-align:center;height:30px;border-radius:5px;cursor:pointer;margin:0;"><p style="padding:6px;color:white;font-family: Roboto, Arial, sans-serif;font-size:14px;" >Choose File</p></div></input></label><input style="float:right; height:25px; background-color:#bec1d4;" type="submit" value="Upload Picture">
                 </div>
             </form>
 

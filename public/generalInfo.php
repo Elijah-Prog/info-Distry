@@ -9,8 +9,7 @@
     </head>
     <body> 
         
-     <div id="newsletter" draggable= "true">
-         <h2 class="news-header">NewsLetter</h2>
+     <div id="newsletter" draggable= "false">
 
         <?php //This section will contain all the content to the newsletter of the site?>
         <section class="info-newsletter">
@@ -29,7 +28,7 @@
                 <br>
                 <br>
 
-                <img class="img-test" src="/info-Distry/public/images/lucifer.png">
+                <img class="img-test" src="/info-Distry-v1.1/public/images/lucifer.png">
                 <br>
                 <br>
                 What was your favourite Journal for today? Let us know.
@@ -62,6 +61,23 @@
                 What was your favourite Journal for today? Let us know.
                 What was your favourite Journal for today? Let us know.
                 <br>
+                Chapter 1 As children we long to grow up 
+                and become independent, do whatever we want, 
+                whenever we want with whoever we want. But never 
+                look at the responsibilities that come with being a 
+                grown-up. I know cliché isn’t it? But it is the blunt 
+                truth that many don’t want to admit. Now let me tell 
+                you about a man that chose not to grow up, yes a man 
+                that never grew up. We all hit a certain age where we 
+                want to explore, show our deepest and even darkest desires, 
+                full fill our egos with whatever bullshit we choose to believe in. 
+                I say bullshit because to be honest some peoples beliefs are literal 
+                crap, but that’s not the point of whatever this is. Now a wise man once 
+                said, “The opposite of growth is loath”. I don’t know who the wise 
+                man was but he said it. I’m sure a lot of you are asking yourselves 
+                “What does he mean?”, well if you have a literal mind you will know 
+                exactly what he meant. But for those with no imagination, do your own 
+                research.
                 <?php function dateUpdated($currentDate){
 
                         $date = $currentDate;

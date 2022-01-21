@@ -39,6 +39,22 @@ class User{
             return false;
         }
     }
+    public function get_friends($id){
+
+        $query = "select * from users where userid != '$id' limit 6 ";
+
+        $DB = new DB();
+        $result = $DB->read($query);
+
+        if($result){
+
+            return $result;
+        }
+        else{
+
+            return false;
+        }
+    }
 }
 
 

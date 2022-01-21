@@ -8,12 +8,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.header-body
-{
-    background: rgb(43, 42, 42);
-    height: fit-content;
+@-ms-viewport       { width: device-width; }
+@-o-viewport        { width: device-width; }
+@viewport           { width: device-width; }
 
-}
 
 header
 {
@@ -26,29 +24,30 @@ header
     justify-content: space-between;
     align-items: center;
     transition: 0.6s;
-    padding: 40px 100px;
+    padding: 12px;
     z-index: 100000;
+    height: 55px;
+    z-index: 1000;
 }
 
-header.sticky{
-
-    padding: 5px 100px;
-    background: #fff;
-
-
-}
 
 header .logo
 {
     position:relative;
-    font-family: Bondoni Moda;
-    font-weight: 700;
-    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    color: black;
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 1.0em;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     transition: 0.6s;
+    padding-left: 10px;
+}
+
+header .logo:hover{
+
+    text-decoration: none;
 }
 
 header ul
@@ -58,7 +57,14 @@ header ul
     display: flex;
     justify-content: center;
     align-items: center;
+    left:0;
+    right:0;
     
+}
+
+.front-header{
+
+    background-color: rgb(255, 255, 255);
 }
 
 header ul li
@@ -72,78 +78,75 @@ header ul li a
 {
 
     position: relative;
-    margin: 0 15px;
+    margin: 0px 0px 0px 16px;
     text-decoration: none;
-    color: #fff;
+    color:black;
     font-weight: 500px;
     letter-spacing: 2px;
     transition:0.6s;
+    font-size: 14px;
+    font-family: Roboto, Arial, sans-serif;
+    background-color: #0670c7;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    float: right;
+    letter-spacing: 1px;
+    font-size: 12px;
+    padding: 0px 15px;
+    border-radius: 200px 200px 200px 200px;
+    width: fit-content;
+    padding-top: 9px;
+    height: 32px;
+    font-weight: 600;
 }
+header ul li a:hover{
 
-.banner{
-    position: relative;
-    width: 100%;
-    height: 20vh;
+    opacity:0.9;
+    transition:0.3s ease;
+    text-decoration: none;
 
-}
-
-header.sticky #user-sign{
-
-    background: #000;
-    color: white;
-}
-
-header.sticky .logo,
-header.sticky ul li a{
-    color: #000;
 }
 
 #user-sign{
     
-    background-color: white;
-    color: black;
+    
+    color: rgb(255, 255, 255);
     text-align: center;
     float: right;
-    letter-spacing: 2px;
-    font-size: 15px;
-    font-weight: bolder;
+    letter-spacing: 1px;
+    font-size: 10px;
     margin: 0px 0px 0px 16px;
     padding: 0px 15px;
     border-radius: 200px 200px 200px 200px;
-    width: 110px;
-    height: 40px;
+    width: 82px;
+    height: 32px;
     padding-top: 10px;
-    font: Arial;
+    font-family: Roboto,Arial, sans-serif;
     text-decoration: none;
-
-}
-
-#user-sign:hover{
-
-    background-color: black;
-    color: white;
+    font-size: 12px;
+    font-weight: 600;
 
 }
 
 
-.search{
+
+
+#search{
 
     position: relative;
-    width: 240px;
-    height: 35px;
-    background: #fff;
-    border-radius: 60px;
-    transition: 0.5s;
+    width:700px;
+    height: inherit;
+    min-width: 200px;
+    min-height: inherit;
+    height: 30px;
+    background:#2b2a2a;
     box-shadow: 0 0 0 1px #000;
-    overflow: hidden;
+    overflow-x: hidden;
+    border-radius: 0px;
+    border: none;
 }
 
-.search.active{
-
-    width: 300px;
-}
-
-.search .icon{
+#search .icon{
 
     position: absolute;
     top: 0;
@@ -159,7 +162,7 @@ header.sticky ul li a{
     cursor: pointer;
 }
 
-.search .icon::before{
+#search .icon::before{
 
     content: '';
     position: absolute;
@@ -171,7 +174,7 @@ header.sticky ul li a{
 }
 
 
-.search .icon::after{
+#search .icon::after{
     content: '';
     position: absolute;
     width: 3px;
@@ -180,31 +183,40 @@ header.sticky ul li a{
     transform: translate(6px,6px) rotate(315deg);
 }
 
-.search .input{
+#search .input{
 
     position: relative;
-    width: 150px;
-    height: 35px;
-    left: 50px;
+    max-width: 700px;
+    min-width: 200px;
+    height: 28px;
+    left: -18px;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #2b2a2a;
+    border: none;
+    font-size: 12px;
 
 }
 
-.search .input input{
+#search .input input{
 
     position: absolute;
     top: 0;
-    width: 80%;
+    width: 90%;
+    min-width: none;;
     height: 100%;
     border: none;
     outline: navajowhite;
     font-size: 15px;
     padding: 10px;
+    background-color: #2b2a2a;
+    color: white;
 }
 
-.clear{
+
+
+#clear{
 
     position: absolute;
     top: 50%;
@@ -212,28 +224,28 @@ header.sticky ul li a{
     width: 15px;
     height: 15px;
     right: 15px;
-    background: white;
+    background: #2b2a2a;
     cursor: pointer;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
 }
 
-.clear::before{
+#clear::before{
     position: absolute;
     content: '';
     width: 1px;
     height: 15px;
-    background:#000;
+    background:white;
     transform: rotate(45deg);
 }
 
-.clear::after{
+#clear::after{
     position: absolute;
     content: '';
     width: 1px;
     height: 15px;
-    background:#000;
+    background:white;
     transform: rotate(315deg);
 }
 
@@ -248,9 +260,67 @@ header.sticky .user-icon-log{
     color: white;
     text-decoration: none;
     text-align: center;
+    padding-left: 10px;
+    cursor: pointer;
 }
 
 .user-post-icon{
 
     border-radius: 200px;
+    width: 40px;
+    height: 40px;
+    transition: 0.4s;
+}
+
+.user-post-icon:hover{
+
+    opacity: 0.8;
+    transition: 0.4s;
+    transform: scale(1.1);
+    
+}
+
+.user-icon-log:hover{
+
+    box-shadow: 5px black;
+    
+}
+#results{
+
+    background-color:#ffffff;
+    width:700px;
+    min-width:200px;
+    position:relative;
+    height: fit-content;
+    display:none;
+    padding: 5px;
+    border: solid 1px black;
+}
+
+#search-cont{
+
+    min-width: 200px;
+    max-width: 700px;
+    position:relative;
+    overflow:visible;
+    height: fit-content;
+}
+
+.js-search{
+
+    color: black;
+    display:unset;
+    position: relative;
+}
+
+#results .search-res:hover{
+
+    background-color: #00cfff;
+    color: white;
+}
+
+.search-res{
+
+    height: 40px;
+    position: relative;
 }

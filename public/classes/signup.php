@@ -16,7 +16,7 @@ class Signup{
             //check if the value evaluated is empty then if empty return an error
             if(empty($value)){
 
-                $this->error = $this->error . $key. "is empty!<br>";
+                $this->error = $this->error . $key. " is empty!<br>";
             }
 
             if($key == "email"){
@@ -39,6 +39,19 @@ class Signup{
                     }
 
 
+                }
+                if($key == "password"){
+                    if(empty($value)){
+                        $this->error = $this->error ."Password can't be empty!<br>";
+                    }else if(strlen($value < 8)){
+                        $this->error = $this->error ."Password must be atleat 8 characters!<br>";
+                    }else if(!preg_match("/[a-z]/", $value)||
+                            !preg_match("/[A-Z]/", $value)||
+                            !preg_match("/[0-9]/", $value)
+
+                    ){
+                        $this->error = $this->error ."Password require 1 each of a-z, A-Z and 0-9!<br>";
+                    }
                 }
 
                     if($key == "last_name"){

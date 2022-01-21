@@ -1,21 +1,30 @@
 @import url('https://fonts.googleapis.com/css?family=Bondoni Moda:200,300,400,500,600,700,800,900&display=swap');
 
+body{
+
+    background-color: rgb(214, 213, 211);
+    height: fit-content;
+}
+
 #header_bar{
-    height:60px;
-    background: #bec1d4;
+    height:50px;
+    background: whitesmoke;
     color: white;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 5000;
+    
 }
 #search-box{
-    width:400px;
+    width:700px;
     height: 20px;
     border-radius: 5px;
     padding: 4px;
     border: 1px solid black;
     font-size: 14px;
+    padding-left: 10px;
 
 }
 
@@ -35,7 +44,7 @@
 #user-profile-content{
     width: 800px;
     margin: auto;
-    height: 400px;
+    min-height: 400px;
 }
 
 #profile-picture{
@@ -47,42 +56,48 @@
 }
 
 
-#menu-button{
+.menu-button{
 
     width: 100px;
     display: inline-block;
     margin: 2px;
-    font-size: 18px;
+    font-size: 16px;
+    color: rgb(4, 1, 141);
 }
 
-#menu-button a{
+.menu-button a{
 
     text-decoration: none;
-    color: black;
+    color: rgb(7, 4, 150);
 }
 
-#menu-button:hover{
+.menu-button:hover{
 
     text-decoration: underline;
+    cursor: pointer;
 }
 
 #username-profile{
 
-    font-size: 25px;
+    font-size: 20px;
 }
 
-#friends-img{
+#friends_img{
 
     width: 50px;
     float: left;
     margin: 8px;
+    transition: transform .2s;
+}
+
+#friends_img:hover{
+    transform: scale(1.5);
 }
 
 #friends-bar{
 
-    background-color: white;
-    min-height: 400px;
-    margin-top: 20px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 0px;
     color: rgb(107, 107, 107);
     padding: 8px;
 }
@@ -123,4 +138,41 @@ textarea{
 
     margin: 0;
     width: 100%;
+}
+
+#friends_img{
+
+    width: 45px;
+    margin: 5px;
+}
+
+#p-settings{
+
+    position: -webkit-sticky;
+    position: sticky; 
+    position:absolute;
+    top:10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.options-settings:hover{
+
+    text-decoration: underline;
+    transition: 0.3s;
+    cursor: pointer;
+}
+  
+.options-settings{
+
+    height:20px;
+
+}
+
+#all-sett{
+
+    position: -webkit-sticky;
+    position: sticky; 
+    top:50px;
+    width:unset;
+    height: auto;
 }
